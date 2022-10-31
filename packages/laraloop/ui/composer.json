@@ -1,0 +1,44 @@
+{
+    "name": "laraloop/ui",
+    "description": "This is my package ui",
+    "keywords": [
+        "Laraloop",
+        "laravel",
+        "ui"
+    ],
+    "homepage": "https://github.com/laraloop/ui",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "damir@tuta.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.73"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laraloop\\UI\\": "src"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraloop\\UI\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

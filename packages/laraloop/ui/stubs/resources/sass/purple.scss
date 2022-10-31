@@ -1,0 +1,15 @@
+//
+// Purple skin
+// Create your own skin easily using https://bootstrap.build/app
+//
+
+// In v5 you need functions to override certain variables,
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults
+@import "~bootstrap/scss/functions";
+@import "./variables/purple";
+
+//
+// Include all or whatever you need
+//
+
+@import "./shared";

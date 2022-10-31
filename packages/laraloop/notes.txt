@@ -1,0 +1,13 @@
+- laraloop/ui => bootstrap ui kit, tailwind ui kit
+- laraloop/auth => depend on laraloop/ui
+- laraloop/account => depend on laraloop/ui and auth
+- laraloop/admin => depend on laraloop/auth and ui
+
+- button extends basic button and create button tab, modal etc...
+- icon component should have three modes:
+    - sprit svg of bootstrap
+    - inline svg
+    - path to svg as file
+    - custom (for example font icons class name)
+- brand: new logo, color skin
+- add docs

@@ -1,0 +1,41 @@
+// Auth layout
+
+// body.auth
+.auth {
+    // main.auth__main
+    &__main {
+        //max-width: 400px;
+    }
+
+    // body.auth--register
+    &--register {
+
+        // main.auth__main
+        .auth__main {
+            //max-width: 500px;
+        }
+    }
+
+    // body.auth--login
+    &--login {
+
+        // main.auth__main
+        .auth__main {
+            //max-width: 500px;
+        }
+    }
+
+    // header.auth__header
+    &__header {
+        text-align: right;
+        margin-right: .5rem;
+    }
+
+    // .auth__content
+    &__content {
+        //box-shadow: 0 8px 80px rgba(40, 27, 77, 0.1);
+    }
+
+    // footer.auth__footer
+    &__footer {}
+}

@@ -1,0 +1,35 @@
+// App layout
+
+// body.app
+.app {
+
+    // header.app__header
+    &__header {
+
+        // Fix padding-top when header is fixed
+        &.fixed-top {
+            // For small device we disable fixed header
+            @include media-breakpoint-down(lg) {
+                position: static;
+            }
+            + .app__main {
+                // Height of header
+                padding-top: 57px;
+                // For small device we disable fixed header
+                @include media-breakpoint-down(lg) {
+                    padding-top: 0; // When header it's not fixed down LG
+                }
+            }
+        }
+        // End fixed header
+    }
+
+    // main.app__main
+    &__main {}
+
+    // .app__content
+    &__content {}
+
+    // footer.app__footer
+    &__footer {}
+}

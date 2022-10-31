@@ -1,0 +1,38 @@
+{
+    "name": "laraloop/website",
+    "description": "Laraloop website package",
+    "keywords": [
+        "laraloop",
+        "website"
+    ],
+    "homepage": "https://github.com/laraloop/docs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "damir@tuta.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.73"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laraloop\\Website\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraloop\\Website\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

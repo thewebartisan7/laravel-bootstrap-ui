@@ -1,0 +1,55 @@
+// Dashboard layout
+
+// body.dashboard
+.dashboard {
+
+    // header.dashboard__header
+    &__header {
+        box-shadow: 0 5px 10px 0 rgba(36,41,51,.15);
+
+        // Fix padding-top when header is fixed
+        &.fixed-top {
+
+            // For small device we disable fixed header
+            @include media-breakpoint-down(lg) {
+                position: static;
+            }
+
+            + .dashboard__main {
+
+                // Height of header
+                padding-top: 104px;
+
+                // For small device we disable fixed header
+                @include media-breakpoint-down(lg) {
+                    padding-top: 0; // When header it's not fixed down LG
+                }
+            }
+        }
+        // End fixed header
+
+        // Logo
+        .navbar-brand .brand {
+            min-width: 120px;
+            max-width: 140px;
+        }
+
+        // Navbar toggler on mobile
+        @include media-breakpoint-down(md) {
+            .navbar-expand  {
+                .navbar-toggler {
+                    display: block
+                }
+            }
+        }
+    }
+
+    // main.dashboard__main
+    &__main {}
+
+    // .dashboard__content
+    &__content {}
+
+    // footer.dashboard__footer
+    &__footer {}
+}

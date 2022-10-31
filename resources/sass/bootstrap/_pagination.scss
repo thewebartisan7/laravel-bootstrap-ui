@@ -1,0 +1,14 @@
+// Make active pagination link
+// Bootstrap add class to li.page-item
+// While we are setting .active class via x-link component to `.page-link`
+// This should be part (soon) of Bootstrap core
+// @see https://github.com/twbs/bootstrap/pull/35804
+
+.page-item {
+  > .active {
+    z-index: 3;
+    color: $pagination-active-color;
+    @include gradient-bg($pagination-active-bg);
+    border-color: $pagination-active-border-color;
+  }
+}

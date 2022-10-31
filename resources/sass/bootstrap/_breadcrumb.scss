@@ -1,0 +1,17 @@
+// Make active link
+// Bootstrap add class to li.breadcrumb-item
+// While we are setting .active class via x-link component to `.breadcrumb-item a`
+// This should be part (soon) of Bootstrap core
+// @see https://github.com/twbs/bootstrap/pull/35804
+
+.breadcrumb-item {
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+
+  > .active {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+  }
+}

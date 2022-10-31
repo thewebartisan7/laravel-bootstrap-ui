@@ -1,0 +1,17 @@
+// Include all shared/core styles.
+// This file it's included by specific skin like default.scss, purple.scss, etc.
+
+//
+// Bootstrap Components
+//
+@import "./bootstrap";
+
+//
+// App Components
+//
+@import "./components";
+
+//
+// Third Party Components
+//
+@import "./vendors";

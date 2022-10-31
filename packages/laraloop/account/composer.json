@@ -1,0 +1,55 @@
+{
+    "name": "laraloop/account",
+    "description": "Laraloop account package",
+    "keywords": [
+        "laraloop",
+        "account"
+    ],
+    "homepage": "https://github.com/laraloop/auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "damir@tuta.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^8.73"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^5.10",
+        "orchestra/testbench": "^6.22",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laraloop\\Account\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laraloop\\Auth\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraloop\\Account\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
